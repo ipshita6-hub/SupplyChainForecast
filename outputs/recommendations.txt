@@ -1,0 +1,122 @@
+======================================================================
+SUPPLY CHAIN DEMAND FORECASTING & INVENTORY OPTIMIZATION REPORT
+======================================================================
+
+Report Generated: 2026-01-10 11:03:21
+Data Period: 2022-01-01 to 2022-04-10
+
+EXECUTIVE SUMMARY
+----------------------------------------------------------------------
+Total Products Analyzed: 10
+Total Current Inventory: 38,146.01 units
+Total Predicted Daily Demand: 4,294.94 units
+Historical Stockout Rate: 1.60%
+Days of Stock Available: 8.88 days
+
+PRODUCTS AT RISK OF STOCKOUT
+----------------------------------------------------------------------
+
+Product ID: 9
+  Category: Food
+  Current Inventory: 3330.65 units
+  Predicted Daily Demand: 354.82 units
+  Lead Time: 9 days
+  RECOMMENDED REORDER QUANTITY: 1459.36 units
+  Risk Level: HIGH
+
+Product ID: 1
+  Category: Home
+  Current Inventory: 4393.54 units
+  Predicted Daily Demand: 680.93 units
+  Lead Time: 13 days
+  RECOMMENDED REORDER QUANTITY: 8884.55 units
+  Risk Level: HIGH
+
+Product ID: 3
+  Category: Food
+  Current Inventory: 4191.26 units
+  Predicted Daily Demand: 634.12 units
+  Lead Time: 8 days
+  RECOMMENDED REORDER QUANTITY: 3418.19 units
+  Risk Level: HIGH
+
+Product ID: 7
+  Category: Food
+  Current Inventory: 2918.67 units
+  Predicted Daily Demand: 588.07 units
+  Lead Time: 12 days
+  RECOMMENDED REORDER QUANTITY: 7666.54 units
+  Risk Level: HIGH
+
+Product ID: 8
+  Category: Home
+  Current Inventory: 2572.59 units
+  Predicted Daily Demand: 347.67 units
+  Lead Time: 14 days
+  RECOMMENDED REORDER QUANTITY: 4728.46 units
+  Risk Level: HIGH
+
+Product ID: 10
+  Category: Food
+  Current Inventory: 4478.34 units
+  Predicted Daily Demand: 630.03 units
+  Lead Time: 9 days
+  RECOMMENDED REORDER QUANTITY: 4027.13 units
+  Risk Level: HIGH
+
+
+OVERSTOCKED PRODUCTS
+----------------------------------------------------------------------
+
+Product ID: 2
+  Category: Sports
+  Current Inventory: 4791.87 units
+  Predicted Daily Demand: 229.09 units
+  Excess Inventory: 4104.61 units
+  Recommendation: Consider promotions or clearance sales
+
+Product ID: 4
+  Category: Food
+  Current Inventory: 4094.79 units
+  Predicted Daily Demand: 148.24 units
+  Excess Inventory: 3650.09 units
+  Recommendation: Consider promotions or clearance sales
+
+Product ID: 5
+  Category: Clothing
+  Current Inventory: 3889.56 units
+  Predicted Daily Demand: 243.48 units
+  Excess Inventory: 3159.12 units
+  Recommendation: Consider promotions or clearance sales
+
+Product ID: 6
+  Category: Clothing
+  Current Inventory: 3484.75 units
+  Predicted Daily Demand: 438.50 units
+  Excess Inventory: 2169.26 units
+  Recommendation: Consider promotions or clearance sales
+
+
+OPTIMAL INVENTORY PRODUCTS
+----------------------------------------------------------------------
+Number of Products: 0
+Average Inventory Level: nan units
+Average Days of Stock: nan days
+
+
+BUSINESS IMPACT & COST SAVINGS
+----------------------------------------------------------------------
+Current Annual Holding Cost: $1,907.30
+Optimized Annual Holding Cost: $644.24
+Potential Annual Savings: $1,263.06
+Stockout Prevention Value: Reduced lost sales and customer dissatisfaction
+
+
+ACTION ITEMS
+----------------------------------------------------------------------
+1. IMMEDIATE: Reorder products at risk of stockout
+2. SHORT-TERM: Implement promotional campaigns for overstocked items
+3. MEDIUM-TERM: Optimize lead times with suppliers
+4. LONG-TERM: Implement automated reorder system based on ML predictions
+
+======================================================================
