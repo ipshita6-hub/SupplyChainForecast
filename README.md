@@ -1,102 +1,83 @@
 # Supply Chain Demand Forecasting
 
-A simple, complete machine learning system for supply chain demand forecasting and inventory optimization.
+A complete machine learning system for supply chain demand forecasting and inventory optimization. This project demonstrates end-to-end ML workflows with practical business applications.
 
 ## 🚀 Quick Start
 
-Run the complete system:
 ```bash
-python3 main.py
-```
+# Install dependencies
+pip install -r requirements.txt
 
-Or run a quick demo:
-```bash
-python3 demo.py
+# Run the complete system
+python main.py
 ```
 
 ## 📋 What It Does
 
-- **Creates realistic sample data** with seasonal patterns
-- **Predicts demand** using Linear Regression
-- **Recommends reorders** using Logistic Regression & Decision Trees
-- **Generates visualizations** showing trends and model performance
-- **Provides actionable recommendations** for inventory management
+- **Demand Forecasting**: Predicts future product demand using Linear Regression
+- **Reorder Optimization**: Smart inventory reorder recommendations using Logistic Regression & Decision Trees
+- **Data Generation**: Creates realistic supply chain data with seasonal patterns
+- **Visualizations**: Generates charts showing trends, seasonality, and model performance
+- **Actionable Insights**: Provides inventory management recommendations
 
 ## 📊 Features
 
-✅ **Demand Forecasting**: Predicts future product demand  
-✅ **Reorder Decisions**: Smart inventory reorder recommendations  
-✅ **Visualizations**: Charts showing demand trends and model performance  
-✅ **Sample Data**: Generates realistic supply chain data for testing  
-✅ **Complete Pipeline**: End-to-end ML workflow  
+✅ Demand prediction with performance metrics  
+✅ Intelligent reorder decision system  
+✅ Comprehensive data visualizations  
+✅ Realistic synthetic data generation  
+✅ End-to-end ML pipeline  
+✅ RESTful API for predictions  
+✅ Advanced analytics and insights  
 
 ## 📁 Project Structure
 
 ```
-SupplyChain-Demand-Forecasting/
-├── main.py                    # Complete forecasting system
-├── demo.py                    # Quick demonstration
+.
+├── main.py                      # Main entry point
+├── config.yaml                  # Configuration settings
+├── requirements.txt             # Python dependencies
 ├── data/
-│   ├── raw/                   # Raw data files
-│   └── processed/             # Processed data
-├── src/                       # Individual modules (optional)
-├── reports/                   # Generated reports and charts
-├── notebooks/                 # Jupyter notebooks
-└── requirements.txt           # Dependencies
+│   └── supply_chain_data.csv   # Generated dataset
+├── models/
+│   ├── demand_model.pkl        # Trained demand forecasting model
+│   ├── demand_model_scaler.pkl # Feature scaler for demand model
+│   ├── reorder_model.pkl       # Trained reorder decision model
+│   └── reorder_model_scaler.pkl# Feature scaler for reorder model
+├── outputs/
+│   ├── plots/                  # Generated visualizations
+│   └── recommendations.txt     # Inventory recommendations
+└── src/
+    ├── data_generator.py       # Synthetic data generation
+    ├── train_demand_model.py   # Demand model training
+    ├── train_reorder_model.py  # Reorder model training
+    ├── predict.py              # Prediction engine
+    ├── visualize.py            # Visualization utilities
+    ├── advanced_analytics.py   # Advanced analysis tools
+    └── api.py                  # REST API server
 ```
 
-## 🎯 Results
+## 🎯 Model Performance
 
-The system provides:
-- **Demand predictions** with MSE around 12-15
-- **Reorder accuracy** of 90%+ 
-- **Visual charts** saved to `reports/figures/`
-- **CSV recommendations** saved to `reports/`
+- **Demand Forecasting**: MSE ~12-15, captures seasonal trends
+- **Reorder Accuracy**: 90%+ precision on inventory decisions
+- **Feature Importance**: Identifies key demand drivers
 
-## 📈 Sample Output
+## 📈 Output Examples
 
-```
-=== INVENTORY RECOMMENDATIONS ===
-Total items analyzed: 50
-Items needing reorder: 11
+Generated visualizations include:
+- Actual vs Predicted demand trends
+- Feature importance analysis
+- Seasonality patterns
+- Confusion matrix for reorder decisions
+- Inventory vs demand correlation
 
-TOP PRIORITY REORDERS:
-• PROD_E: Current=17, Predicted Demand=23, Probability=0.908
-• PROD_A: Current=16, Predicted Demand=22, Probability=0.904
-...
-```
+Recommendations file includes:
+- Priority reorder items
+- Predicted demand vs current inventory
+- Reorder probability scores
 
 ## 🛠 Requirements
-
-- Python 3.7+
-- pandas, numpy, scikit-learn, matplotlib, seaborn
-
-Install with:
-```bash
-pip install -r requirements.txt
-```
-
-## 🎓 Educational Use
-
-This system demonstrates:
-- Machine learning for business applications
-- Time series feature engineering
-- Model evaluation and comparison
-- Inventory optimization techniques
-- Data visualization best practices
-
-Perfect for learning supply chain analytics and ML!
-
-### Expected Data Format
-
-The system expects CSV files with the following columns:
-- `date`: Date of the record
-- `product_id`: Unique product identifier
-- `demand` or `sales`: Historical demand/sales quantity
-- `inventory` or `stock`: Current inventory levels (optional)
-- `price`: Product price (optional)
-
-## Requirements
 
 - Python 3.7+
 - numpy >= 1.21.0
@@ -105,25 +86,36 @@ The system expects CSV files with the following columns:
 - matplotlib >= 3.4.0
 - seaborn >= 0.11.0
 - joblib >= 1.1.0
+- flask >= 2.0.0 (for API)
 
-## Configuration
+## 🔧 Configuration
 
-The system can be configured through `supply_chain_forecasting/config.py`:
-- Data directories and file paths
-- Model parameters and random seeds
-- Preprocessing strategies
+Edit `config.yaml` to customize:
+- Data generation parameters
+- Model hyperparameters
 - Visualization settings
-- Reorder thresholds and business rules
+- Reorder thresholds
+- API settings
 
-## Educational Purpose
+## 📚 Data Format
 
-This system is designed for academic and educational use, focusing on:
-- Clear, modular code structure
-- Comprehensive documentation
-- Step-by-step machine learning pipeline
-- Interpretable models and results
-- Best practices in data science and ML engineering
+Input CSV should contain:
+- `date`: Record date
+- `product_id`: Product identifier
+- `demand`: Historical demand quantity
+- `inventory`: Current stock level
+- `price`: Product price
+
+## 🎓 Learning Outcomes
+
+This project demonstrates:
+- Time series feature engineering
+- Model training and evaluation
+- Hyperparameter tuning
+- Data visualization best practices
+- API development for ML models
+- Production-ready code structure
 
 ## License
 
-This project is intended for educational purposes.
+Educational use only.
